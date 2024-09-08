@@ -11,7 +11,7 @@ linting with docker:
     docker-compose run --rm app sh -c "flake8"
 
 testing with docker:
-    docker-compose run --rm app sh -c "python manage.py test"
+    docker-compose run --rm app sh -c "python manage.py test && flake8"
 
 create django app:
     docker-compose run --rm app sh -c "django-admin startproject app ."
